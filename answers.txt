@@ -1,1 +1,6 @@
-Placeholder
+Task 1:
+
+// Under this line write a message to yourself from GitHub
+
+// Under this line, describe what the command 'git fetch' does
+
