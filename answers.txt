@@ -4,3 +4,8 @@ Task 1:
 
 // Under this line, describe what the command 'git fetch' does
 
+
+Task 2:
+
+// Under this line describe why we need to run 'git push' after making a commit
+
