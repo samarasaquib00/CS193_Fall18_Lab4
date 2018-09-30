@@ -60,7 +60,12 @@ Now that we've made a bunch of changes, we need to get them all back into the ma
 Mistakes happen, and it's ok. git is here to help. In this section we will go over a few useful tips for using git when things go south.
 
 ### TODO 5
-Make sure you have no un-committed changes (i.e. `git status` shows nothing to commit). Run `rm answers.txt` (yes, really) and with the click of the enter key, permanently wipe away all of the hard work you've put into this lab up until this point. POOF! As your finger descends onto the enter key, time begins to slow down... You realize the mistake you're about to make but it's too late, you can't pull back fast enough... And with that... It's over. Gone. If it weren't for git, you'd be royally screwed. Run `git status` and notice how git tells you that you deleted `answers.txt`. To remedy this mistake, simple run `git checkout answers.txt`.  
+Make sure you have no un-committed changes (i.e. `git status` shows nothing to commit). Run `rm answers.txt` (yes, really) and with the press of the enter key, permanently wipe away all of the hard work you've put into this lab up until this point. POOF! As your finger descends onto the enter key, time begins to slow down... You realize the mistake you're about to make but it's too late, you can't pull back fast enough... And with that... It's over. Gone. If it weren't for git, you'd be royally screwed. Run `git status` and notice how git tells you that you deleted `answers.txt`. To remedy this mistake, simply run `git checkout answers.txt`. Amazingly, `answers.txt` is right back how it was and there was no need to worry in the first place!
+
+### TODO 6
+Again, make sure you have no un-committed changes (i.e. `git status` shows nothing to commit). In the lab directory, there should be a bash script called `TODO_6_setup.sh`. Run `/bin/bash TODO_6_setup.sh`. If everything went smoothly..... Wait wtf. What did this script do. Shit. Ok, looks like someone was trying to mess with you and changed around what this script does and it thoroughly messed with your repo. It looks like this script deleted `answers.txt` again. Not to worry! We know how to fix this. 
+
+Lesson 1: NEVER RUN A RANDOM BASH SCRIPT WITHOUT UNDERSTANDING WHAT IT DOES 
 
 
 
