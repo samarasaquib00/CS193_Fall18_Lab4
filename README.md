@@ -135,6 +135,9 @@ Ok by now you probably realize that the above steps no longer work. When running
 
 Time for plan B. We have our repo stored in GitHub along with our local copy, right? So we should just be able to go to our repository on GitHub, open up `answers.txt` in the web browser and copy and paste all of our hard work back to our local repo! Sounds great! Go ahead and do that now. 
 
+*WE LOVE GITHUB!!!!*
+![alt text](https://i.pinimg.com/originals/73/ed/50/73ed50d9bfde8459aa2407f561224508.png)
+
 Ok so that didn't work.... `answers.txt` is no longer in the GitHub repository either! Now what? 
 
 Time for Plan C, the actual way to fix this. First, open the `TODO_6_setup.sh` to see what it actually did. It looks like this script first deleted `answers.txt`, then actually committed this change and pushed this changed to our GitHub repo. That wasn't very nice of this person to do. Luckily, we are git pros and can fix any problem thrown our way! 
