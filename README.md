@@ -38,7 +38,7 @@ This means that there is one commit (the message you wrote to yourself) on the b
 ### TODO 2
 Open `answers.txt` on your local computer (NOT FROM GITHUB) with a text editor and fill out the remaining question for Task 1
 
-## Task 2: Make a Commit
+## Task 4: Make a Commit
 
 Now that we've made a change to `answers.txt` we need to actually commit this change. Run `git status` in the Lab 4 directory. Notice how git lists the `Changes not staged for commit`. As expected, `answers.txt` is listed as a file that we have changed. 
 
@@ -55,7 +55,7 @@ Now if we go back to GitHub, we should see this change right???? WRONG! Remember
 ### TODO 3
 Open `answers.txt` on your local computer (NOT FROM GITHUB) with a text editor and answer the question for Task 2, then repeat the steps we just did to commit this change and push it to GitHub.
 
-## Task 3: WTF is a branch
+## Task 5: WTF is a branch
 
 Now that we know the basics of pulling changes from remote, commiting changes, and pushing local changes to a remote server, the usefulness of git for large projects should be clear. 
 
@@ -102,7 +102,7 @@ Remember how earler we ran `git pull` to retrieve changes from the remote `maste
 
 Open `answers.txt` again. We now have the message we wrote from `branch-A`! Using this same process, merge the changes from branches `branch-B` and `branch-C` into `master`. If everything went smoothly, `answers.txt` should now contain all the answers you previously wrote along with all the messages from the various branches. Nicely done!
 
-## Task 4: Crisis Management
+## Task 6: Crisis Management
 
 Mistakes happen, and it's ok. git is here to help. In this section we will go over a few useful tips for using git when things go south.
 
