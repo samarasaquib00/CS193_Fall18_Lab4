@@ -128,7 +128,7 @@ If everything went smoothly..... Wait wtf. What did this script do. Shit. Ok, lo
 
 *Lesson 1: NEVER RUN A RANDOM BASH SCRIPT WITHOUT FIRST UNDERSTANDING WHAT IT DOES EVEN IF A LAB TELLS YOU TO*
 
-INSERT SOME MEME OR SOMETHING TO TAKE UP SPACE
+![alt text](https://therooster.com/sites/default/files/styles/hero/public/anonymous%20hacker%20group%20denver%20michael%20hancock%20mayor%20prostitution%20ring%20homeless.jpg?itok=YBadPUnb)
 
 
 Ok by now you probably realize that the above steps no longer work. When running `git checkout answers.txt` you are greeted with a beautiful message that says `error: pathspec 'answers.txt' did not match any file(s) known to git.` This problem is a little more involved than a simple accidental deletion of a file. 
