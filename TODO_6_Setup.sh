@@ -4,7 +4,7 @@ rm ./answers.txt
 
 git add answers.txt
 
-git commit -m "LOL GET REKT I JUST PERMANENTLY DELETED answers.txt"
+git commit -m "LOL GIT REKT I JUST PERMANENTLY DELETED answers.txt"
 
 git push
 
