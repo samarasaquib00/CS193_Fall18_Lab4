@@ -67,14 +67,20 @@ To understand what a `branch` is, try to visualise a git repository as a timelin
 
 For our example with this lab, we would create two branches: `task-1-other-student` and `tasks-2-to-end`. The other student would work on task 1 on their branch, making and committing changes along the way. When they are done with task 1, they would `merge` their `task-1-other-student` branch with the `master` branch. A `merge` incorporates the changes from one branch into another. 
 
-To see what branches are currently active in your repository, run `git branch`. 
+To see what branches are currently active in your *local* repository, run `git branch`. Right now, you should only see `master` because this is the only branch we have worked on locally. Notice how 'master' is green and has a '\*' next to it. This means that we currently have the `master` branch `checked out` (i.e. we are working off the `master` branch and changes we `commit` will go here). 
 
-You should see 3 branches: 'master', 'branch-A', 'branch-B'. Notice how 'master' is green and has a '\*' next to it. This means that we currently have the `master` branch `checked out` (i.e. we are working off the `master` branch and changes we `commit` will go here). 
+To see all branches (both *local* and *remote*) run `git branch --all`. This time you should see several more branches. The two we care about for this lab are `remotes/origin/branch-A` and `remotes/origin/branch-B`. Currently, both of these branches are *remote* and to work off of them, we need to create a *local* branch that will *track* these remote branches. 
+
+To do this, first run `git checkout origin/branch-A`. git will let you know that you are now in a detached head state. All this means is that the current branch you are on does not have a corresponding *local* branch. To create a local branch for our *remote* `branch-A`, run the exact command that git tells you to: `git checkout -b branch-A`. This command does two things: First, it creates a new *local* branch from our current state called `branch-A`, then it checks this branch out to make it our *active* branch. Now if we run `git branch` again, we will see we have a local copy of `branch-A` and that it is our currently active branch. 
+
+Repeat these same steps to create a local copy for `branch-B`.  
+
+Now when you run `git branch`, you should see 3 branches: 'master', 'branch-A', 'branch-B'.
 
 The other branches are present in the repository, but not currently active. To change branches (think of this as jumping from one parallel git timeline to another in our timeline visualization) run `git checkout branch-A`. If all is well, you should run `git branch` again and see that `branch-A` is now your active branch. From `branch-A` open up `answers.txt` in a text editor. Notice how the answers you committed earlier are no longer there! This is because the `commits` that contain your answers were made to the `master` branch and we are now on `branch-A`. Do not worry though! We will get your changes back later.     
 
 ### TODO 4 
-While working off of `branch-A`, open `answers.txt` in a text editor and under the line that tells you to write a message from `branch-A`, write yourself a message! Then commit this change using the steps we learned earlier. 
+While working off of `branch-A` (i.e. you have run `git checkout branch-A`), open `answers.txt` in a text editor and under the line that tells you to write a message from `branch-A`, write yourself a message! Then commit this change using the steps we learned earlier. 
 
 Next, run `git checkout branch-B` to checkout `branch-B`. 
 
@@ -96,9 +102,9 @@ Ensure that you have committed all the changes you've made, and check out the `m
 
 Open up `answers.txt` and notice how none of the messages we wrote from the various branches are there! There are three branches we need to incorporate into the `master` branch: `branch-A`, `branch-B`, and `branch-C`. 
 
-To merge `branch-A` into the `master` branch, run `git pull branch-A`. 
+To merge `branch-A` into the `master` branch, run `git merge branch-A`. 
 
-Remember how earler we ran `git pull` to retrieve changes from the remote `master` branch into our local `master` branch? We are doing the exact same process here, except we tell git to merge changes from a different local branch `branch-A` into the local `master` branch. 
+Remember how earler we ran `git pull` to retrieve changes from the remote `master` branch into our local `master` branch? The command `git pull` does two things. First, it runs `git fetch` to retrieve the specified branch from *remote* and it then runs `git merge` to merge those fetched changes into the current branch. We are doing the exact same process here, except we tell git to merge changes from a different local branch `branch-A` into the local `master` branch (since we are merging a *local* into another *local* branch, the *fetch* step of `git pull` is not needed and we just run `git merge`). 
 
 Open `answers.txt` again. We now have the message we wrote from `branch-A`! Using this same process, merge the changes from branches `branch-B` and `branch-C` into `master`. If everything went smoothly, `answers.txt` should now contain all the answers you previously wrote along with all the messages from the various branches. Nicely done!
 
