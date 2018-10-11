@@ -23,7 +23,7 @@ The third line `nothing to commit, working tree clean` tells you that you have n
 It is important to understand how useful git and GitHub can be for collaboration. For a moment, let's pretend that you and someone else are both working on solving Lab 4 together. We will simulate someone else pushing changes to Lab 4 while you are working on it locally. To do this, make sure you have already cloned the Lab 4 repo onto your local machine. Next, in your web browser, navigate to your Lab 4 repository in GitHub. 
 
 ### TODO 1
-Open the `answers.txt` file in GtiHub from the web browser and under `Part 1`, write a message to yourself. This can be anything you want. Go ahead and commit this message to the `master` branch. Again, make sure this change is made from GitHub in your web browser!! 
+Open the `answers.txt` file in GitHub from the web browser and under `Part 1`, write a message to yourself. This can be anything you want. Go ahead and commit this message to the `master` branch. Again, make sure this change is made from GitHub in your web browser!! 
 
 Now, locally in your terminal, run `git status` again in the Lab 4 directory. Notice the output this time! Wait.... it's still the same. Why does `git status` tell us  `Your branch is up to date with 'origin/master'` if we just made a change to the `master` branch in GitHub?
 
@@ -48,7 +48,7 @@ Perfect! We are now ready to make our commit. Run `git commit` and in the text e
 
 Now if we go back to GitHub, we should see this change right???? WRONG! Remember from Task 1 that syncing your local git repository with the remote server (GitHub) is not automatic! To `push` your local changes to the remote server, run `git push`. Now check the GitHub Lab 4 repository again. BAM! There are your fancy new changes. 
 
-*IMPORTANT NOTE: In a git repository, NONE of your work will be saved without making a commit. A commit is the only way for you to tell git that it needs to care about the changes you made. Because of this, a common and extremely imporant git mantra is COMMIT EARLY AND COMMIT OFTEN. Keeping this in mind as you work on more involved projects with git will save you hours of headache about losing files and undoing yesterday's stupid, dumb changes you thought were genius at 3 in the morning (I speak from experience).*
+*IMPORTANT NOTE: In a git repository, NONE of your work will be saved without making a commit. A commit is the only way for you to tell git that it needs to care about the changes you made. Because of this, a common and extremely important git mantra is COMMIT EARLY AND COMMIT OFTEN. Keeping this in mind as you work on more involved projects with git will save you hours of headache about losing files and undoing yesterday's stupid, dumb changes you thought were genius at 3 in the morning (I speak from experience).*
 
 ![alt text](https://image.slidesharecdn.com/git-mume12-121022042023-phpapp02/95/an-introduction-to-git-9-638.jpg?cb=1350879713)
 
@@ -57,7 +57,7 @@ Open `answers.txt` on your local computer (NOT FROM GITHUB) with a text editor a
 
 ## Task 5: WTF is a branch
 
-Now that we know the basics of pulling changes from remote, commiting changes, and pushing local changes to a remote server, the usefulness of git for large projects should be clear. 
+Now that we know the basics of pulling changes from remote, committing changes, and pushing local changes to a remote server, the usefulness of git for large projects should be clear. 
 
 Again, let's imagine that you and another student are working on this lab together. While planning how to complete the lab on time, you two have decided that the other student will work on task 1 while you concurrently work on the rest of the tasks. In git, when different work items (in this case the different tasks) are distributed to different people to work on, it is good practice to create a new `branch` for each work item. 
 
@@ -90,7 +90,7 @@ In `answers.txt` under the line that tells you to write a message to yourself fr
 
 Now, we will create a new branch `branch-C` and make another change. 
 
-The command to create a new branch is `git branch NEW_BRANCH_NAME`. It is very imporant to realize that in git, when a new branch is created, it branches from the currently active branch. Since we are currently on `branch-B`, if we run `git branch branch-C`, a new branch `branch-C` will be created which contains all of the commits in `branch-B` up to this point. 
+The command to create a new branch is `git branch NEW_BRANCH_NAME`. It is very important to realize that in git, when a new branch is created, it branches from the currently active branch. Since we are currently on `branch-B`, if we run `git branch branch-C`, a new branch `branch-C` will be created which contains all of the commits in `branch-B` up to this point. 
 
 Run `git branch branch-C` and then `git branch` again. Notice how `branch-B` is still the active branch, but now a new branch `branch-C` has been created. `git branch` merely creates a branch, but does not check it out as the `active` branch. Switch to `branch-C` by running `git checkout branch-C`. 
 
@@ -104,7 +104,7 @@ Open up `answers.txt` and notice how none of the messages we wrote from the vari
 
 To merge `branch-A` into the `master` branch, run `git merge branch-A`. 
 
-Remember how earler we ran `git pull` to retrieve changes from the remote `master` branch into our local `master` branch? The command `git pull` does two things. First, it runs `git fetch` to retrieve the specified branch from *remote* and it then runs `git merge` to merge those fetched changes into the current branch. We are doing the exact same process here, except we tell git to merge changes from a different local branch `branch-A` into the local `master` branch (since we are merging a *local* into another *local* branch, the *fetch* step of `git pull` is not needed and we just run `git merge`). 
+Remember how earlier we ran `git pull` to retrieve changes from the remote `master` branch into our local `master` branch? The command `git pull` does two things. First, it runs `git fetch` to retrieve the specified branch from *remote* and it then runs `git merge` to merge those fetched changes into the current branch. We are doing the exact same process here, except we tell git to merge changes from a different local branch `branch-A` into the local `master` branch (since we are merging a *local* into another *local* branch, the *fetch* step of `git pull` is not needed and we just run `git merge`). 
 
 Open `answers.txt` again. We now have the message we wrote from `branch-A`! Using this same process, merge the changes from branches `branch-B` and `branch-C` into `master`. If everything went smoothly, `answers.txt` should now contain all the answers you previously wrote along with all the messages from the various branches. Nicely done!
 
