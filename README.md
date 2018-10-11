@@ -61,7 +61,7 @@ Now that we know the basics of pulling changes from remote, commiting changes, a
 
 Again, let's imagine that you and another student are working on this lab together. While planning how to complete the lab on time, you two have decided that the other student will work on task 1 while you concurrently work on the rest of the tasks. In git, when different work items (in this case the different tasks) are distributed to different people to work on, it is good practice to create a new `branch` for each work item. 
 
-To understand what a `branch` is, try to visualise a git repository as a timeline of changes. Along this timeline, there are `commits` which represent a milestone of changes being saved to the repository. At any point in time, you may create a new `branch` which splits the current timeline into two parallel lines that are maintained seperately and receive their own commits.  
+To understand what a `branch` is, try to visualize a git repository as a timeline of changes. Along this timeline, there are `commits` which represent a milestone of changes being saved to the repository. At any point in time, you may create a new `branch` which splits the current timeline into two parallel lines that are maintained seperately and receive their own commits.  
 
 ![alt text](http://jlord.us/git-it/assets/imgs/branches.png)
 
