@@ -128,7 +128,7 @@ The command `git checkout FILENAME` will reset the file `FILENAME` to the last c
 
 Again, make sure you have no un-committed changes (i.e. `git status` shows nothing to commit). 
 
-In the lab directory, there should be a bash script called `TODO_6_Setup.sh`. Run `/bin/bash TODO_6_setup.sh`. 
+In the lab directory, there should be a bash script called `TODO_6_Setup.sh`. Run `/bin/bash TODO_6_Setup.sh`. 
 
 If everything went smoothly..... Wait wtf. What did this script do. Shit. Ok, looks like someone was trying to mess with you and changed around what this script does and it thoroughly messed with your repo. It looks like this script deleted `answers.txt` again. Not to worry! We know how to fix this. Follow the same steps as TODO 5 to get answers.txt back! 
 
@@ -146,7 +146,7 @@ Time for plan B. We have our repo stored in GitHub along with our local copy, ri
 
 Ok so that didn't work.... `answers.txt` is no longer in the GitHub repository either! Now what? 
 
-Time for Plan C, the actual way to fix this. First, open the `TODO_6_setup.sh` to see what it actually did. It looks like this script first deleted `answers.txt`, then actually committed this change and pushed this changed to our GitHub repo. That wasn't very nice of this person to do. Luckily, we are git pros and can fix any problem thrown our way! 
+Time for Plan C, the actual way to fix this. First, open the `TODO_6_Setup.sh` to see what it actually did. It looks like this script first deleted `answers.txt`, then actually committed this change and pushed this changed to our GitHub repo. That wasn't very nice of this person to do. Luckily, we are git pros and can fix any problem thrown our way! 
 
 Run `git log`. This command displays a list of all of the commits that have been made to this branch up to this point. 
 
