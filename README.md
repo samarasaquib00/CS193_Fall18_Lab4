@@ -80,7 +80,7 @@ Now when you run `git branch`, you should see 3 branches: 'master', 'branch-A', 
 The other branches are present in the repository, but not currently active. To change branches (think of this as jumping from one parallel git timeline to another in our timeline visualization) run `git checkout branch-A`. If all is well, you should run `git branch` again and see that `branch-A` is now your active branch. From `branch-A` open up `answers.txt` in a text editor. Notice how the answers you committed earlier are no longer there! This is because the `commits` that contain your answers were made to the `master` branch and we are now on `branch-A`. Do not worry though! We will get your changes back later.     
 
 ### TODO 4 
-While working off of `branch-A` (i.e. you have run `git checkout branch-A`), open `answers.txt` in a text editor and under the line that tells you to write a message from `branch-A`, write yourself a message! Then commit this change using the steps we learned earlier. 
+While working off of `branch-A` (i.e. you have run `git checkout branch-A`), open `answers.txt` in a text editor and under the line that tells you to write a message from `branch-A`, write yourself a message! Then commit this change using the steps we learned earlier. When you try to push this branch, notice how git tells you `fatal: The current branch branch-A has no upstream branch. To push the current branch and set the remote as upstream, use git push --set-upstream origin branch-A`. All this means is that git does not know which *remote* branch to push this *local* branch to. Run the exact command git tells you to resolve this problem. 
 
 Next, run `git checkout branch-B` to checkout `branch-B`. 
 
@@ -128,7 +128,7 @@ The command `git checkout FILENAME` will reset the file `FILENAME` to the last c
 
 Again, make sure you have no un-committed changes (i.e. `git status` shows nothing to commit). 
 
-In the lab directory, there should be a bash script called `TODO_6_setup.sh`. Run `/bin/bash TODO_6_setup.sh`. 
+In the lab directory, there should be a bash script called `TODO_6_Setup.sh`. Run `/bin/bash TODO_6_setup.sh`. 
 
 If everything went smoothly..... Wait wtf. What did this script do. Shit. Ok, looks like someone was trying to mess with you and changed around what this script does and it thoroughly messed with your repo. It looks like this script deleted `answers.txt` again. Not to worry! We know how to fix this. Follow the same steps as TODO 5 to get answers.txt back! 
 
