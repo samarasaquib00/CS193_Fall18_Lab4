@@ -3,7 +3,7 @@
 In labs up to this point, you've been using GitHub to record and commit your work. As you learned in lecture, GitHub is merely a hosting service (with some other nice features) for git. In this lab, we'll be walking through the *real* git.
 
 ## Task 1: Clone
-As you've done before, everything git related usually starts with a clone. Once you have created your copy of the Lab 4 repository (`lab-4-<GitHub username>`), run the command `git clone https://github.com/Purdue-CS193/lab-4-<GitHub username>.git`. As we know, all this command does is to download a copy of the *remote* repository to your *local* machine. 
+As you've done before, everything git related usually starts with a clone. Once you have created your copy of the Lab 4 repository (`lab-4-<GitHub username>`), click the green "Clone or download" button in the top right, then copy the URL it give you.  Now you can run the command `git clone <URL-you-just-copied>`. As we know, all this command does is to download a copy of the *remote* repository to your *local* machine. 
 
 Now if you run `ls`, you should see a directory called `lab-4-<GitHub username>`. `cd` into this directory and run `ls` again and you should see all the same files that GitHub shows in the browser for this repository. 
 
